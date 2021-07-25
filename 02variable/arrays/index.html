@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>การใช้งาน Array</h1>
+    <p>การนำข้อมูลหลายๆ ตัว ที่มีชนิดข้อมูลเหมือนกัน มาจัดรวมกลุ่ม โดยตัวแปรแต่ละตัวจะเรียกว่าสมาชิก (Member)</p>
+    <p id="arr"></p><hr>
+    <h3>การนำสมาชิกในอาร์เรย์มารวมกัน</h3>
+    <p>var scores = [10,20,30,40] ;</p>
+    <p>var totalScores = scores[0] + scores[1] + scores[2] + scores[3]</p>
+    <p id="total"></p><hr>
+    <h3>การหาขนาดของอาร์เรย์</h3>
+    <p id="length"></p><hr>
+    <h3>การเรียงค่าในอาร์เรย์</h3>
+    <h4>จากน้อยไปหามาก จะใช้เมธอด sort </h4>
+    <ul>
+        <li type="circle">เรียงตามตัวอักษร
+            <p>names = new Array("Tom","Cid","Boy","Golf","Sai")</p>
+            <p id="sort"></p><hr>
+            <p>nums1 = new Array(1,9,200,40,3,7)</p>
+            <p id="nums1"></p>
+        </li>
+        <li type="circle">เรียงตามลำดับค่า ต้องมีการสร้างฟังก์ชันเปรียบเทียบขึ้นมา
+            <p>nums2 = new Array (1,8,90,4,6,80);</p>
+            <p id="nums2"></p>
+            
+        </li>
+    </ul><hr>
+    <h3>การใช้งานสตริง</h3>
+    <p>สามารถอ้างอิงอักขระแต่ละตัวในสตริงได้ด้วยเมธอด charAt</p>
+    <p>var test = "This is a test" ;</p>
+    <p id="test"></p><hr>
+    <h3>การหาขนาดของสตริง</h3>
+    <p>การหาขนาดของสตริง จะใช้คุณสมบัติ length</p>
+    <p id="len"></p><hr>
+    <h3>การแปลงตัวพิมพ์</h3>
+    <p>แปลงตัวพิมพ์ใหญ่เป็นพิมพ์เล็ก  หรือ พิมพ์เล็กเป็นพิมพ์ใหญ่  ใช้ method toLowerCase , toUpperCase</p>
+    <p id="lower"></p>
+    <p id="upper"></p><hr>
+    <h3>การทำงานกับสตริงย่อย</h3>
+    <p>จะใช้เมธอด substring(index เริ่มต้น , index ที่ต้องการ) เช่น ต้องการสตริงลำดับที่ 0 ถึง สตริงลำดับที่ 3 เขียนได้ ดังนี้ ==>  ชื่อตัวแปร.substring(0,4) </p>
+    <p id="index"></p><hr>
+    <h3>การค้นหาสตริงย่อย</h3>
+    <p>เราสามารถค้นหาสตริงย่อย ในสตริงได้โดยใช้ เมธอด indexOf ถ้าหากพบจะแสดงค่าตำแหน่งออกมา แต่หากไม่พบจะแสดงค่าลบหนึ่ง</p>
+    <p>var index1 = "This is a fish. It is so beautiful.";</p>
+    <p id="index1"></p>
+    <p id="index2"></p>
+    <p><b>กรณีค้นหาตำแหน่งสุดท้าย ใช้เมธอด lastIndexOf</b></p>
+    <p id="lastIndex"></p><hr>
+    <h3>การแยกและรวมสตริงย่อย</h3>
+    <p>สามารถแยกสตริงออกมาเป็นอาร์เรย์ของสตริงย่อยได้ โดยใช้เมธอด split ต้องระบุ สตริงที่ใช้แยก เพื่อให้รู้ตำแหน่งว่าจะแยกสตริงที่จุดใด</p>
+    <p id="test2"></p>
+    <p id="split"></p>
+    <p><b>รวมสตริง ใช้เมธอด join</b></p>
+    <p id="join"></p>
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>
