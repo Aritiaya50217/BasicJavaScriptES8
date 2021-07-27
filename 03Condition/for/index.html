@@ -15,6 +15,30 @@
     <p id="result"></p>
     <hr>
     <h2>for..of And for..in</h2>
+    <li>for...of จะเรียกดูค่า (value) อาร์เรย์และเรียกดูทั้ง key และ value ในออบเจ็กต์</li>
+    <li>for...in จะใช้เรียกดู index ในอาร์เรย์หรือดูค่า key ในออบเจ็กต์ </li>
+    <p>Example</p>
+    <li>var arr = [7,8,9,3,5] <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (var idx in arr) { <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log("Index : ",idx) <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</li>
+    <p>ผลลัพธ์  <br>&nbsp;&nbsp;&nbsp;Index : 0 <br>&nbsp;&nbsp;&nbsp;Index : 1 <br>&nbsp;&nbsp;&nbsp;Index : 2<br>&nbsp;&nbsp;&nbsp;Index : 3<br>&nbsp;&nbsp;&nbsp;Index : 4</p>
+    <li>for (var val of arr) { <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log("Value  :",val)
+    <br>&nbsp;&nbsp;&nbsp;}</li>
+    <p>ผลลัพธ์  <br>&nbsp;&nbsp;&nbsp;Value : 7 <br>&nbsp;&nbsp;&nbsp;Value : 8 <br>&nbsp;&nbsp;&nbsp;Value : 9<br>&nbsp;&nbsp;&nbsp;Value : 3<br>&nbsp;&nbsp;&nbsp;Value : 5</p>
+    <li>var obj = {'x' : 10,'y':20,'z':'zero'} <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (var key in obj) { <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log("Key :",obj)
+    <br>&nbsp;&nbsp;&nbsp;}</li>
+    <p>ผลลัพธ์  <br>&nbsp;&nbsp;&nbsp;Key : x <br>&nbsp;&nbsp;&nbsp;Key : y <br>&nbsp;&nbsp;&nbsp;Key : z<br>&nbsp;&nbsp;&nbsp;</p>
+    <li>for (var [key,value] of Object.entries(obj))&Tab;{ <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log("Key : ",key)
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log("Value : ",value)
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</li>
+    <p>ผลลัพธ์  <br>&nbsp;&nbsp;&nbsp;Key : x <br>&nbsp;&nbsp;&nbsp;Value : 10 <br>&nbsp;&nbsp;&nbsp;Key : y&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Value : 20 <br>&nbsp;&nbsp;&nbsp;Key : x <br>&nbsp;&nbsp;&nbsp;Value : zero<br>&nbsp;&nbsp;&nbsp;</p>
+    <h3 style="color: red">การใช้ foi...in กับข้อมูลที่เป็นออบเจ็กต์ จะต้องเรียกใช้เมธอด Object entries() เพื่อเรียกดูข้อมูลได้ทั้ง key และ value ส่วนการใช้ for...in ก็สามารถเรียกดูค่าได้ด้วยการอ้างอิงผ่าน index ในอาร์เรย์ และ key ในออบเจ็กต์</h3>
+    
 
     <script src="app.js"></script>
 </body>

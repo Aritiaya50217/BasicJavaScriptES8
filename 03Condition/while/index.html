@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>คำสั่ง While</h1>
+    <p>เป็นคำสั่งที่ทำซ้ำไปเรื่อยๆ จนกว่าเงื่อนไขจะเป็นเท็จ ในคำสั่งเราจะต้องกำหนดเงื่อนไข โดยจะออกจากคำสั่ง While ทันทีเมื่อเงื่อนไขเป็นเท็จ</p>
+    <p>var i = 1 ; <br>
+    while (i <= 10) { <br>
+    &nbsp;&nbsp;&nbsp;console.log(i++) <br>}</p>
+    <p>ผลลัพธ์<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</p><hr>
+    <h3>คำสั่ง do...while</h3>
+    <li>เหมือนคำสั่ง while แต่จะทำคำสั่งใน {...} ก่อนหนึ่งรอบจึงค่อยตรวจสอบเงื่อนไข</li>
+    <p>i = 1 ; <br>
+    do { <br>
+    &nbsp;&nbsp;&nbsp;console.log(i); <br>
+    &nbsp;&nbsp;&nbsp;i++ ; <br>
+    }while(i <= 10) ;</p>
+    <p>ผลลัพธ์<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</p><hr>
+    <h3>Infinite Loop</h3>
+    <p>ถ้าเงื่อนไขไม่เป็นเท็จ จะเกิดการทำซ้ำไม่รู้จบ</p><hr>
+    <h3>break And continue</h3>
+    <li>break ถ้าเจอคำสั่งนี้หยุดทำซ้ำทันที เช่น <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (i = 1; i <= 10; i++){ <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (i ==3) break ; <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(i); <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ผลลัพธ์<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</li>
+    <li>continue ถ้าเจอคำสั่งนี้จะข้ามไปทำรอบใหม่ทันที เช่น <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (i = 1; i <= 10; i++){ <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (i ==3) continue ; <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(i); <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ผลลัพธ์<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10</li>
+    
+
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>
